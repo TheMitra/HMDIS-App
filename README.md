@@ -30,29 +30,3 @@ Code plan:
 
 ----------------------------------------Done so far----------------------------------------
 
-+ Create classes: [Category][Subject][Time][Money][Control]
-
-		[Category]
-	+ Add variables to Category: A list that holds all the Subjects in the category.
-
-		[Subject]
-	+ Add variables to Subject: A Time variable and a Money variable, a string that 
-	holds the subject name and another variable which holds a category if any. 
-	+ Create constructor for Subject.
-
-		[Time]
-	+ Add variables to Time: Integers that holds hours and minutes. 
-	+ Create constructor for Time.
-
-		[Money]
-	+ Add variables to Money: Integer that holds variable money in SEK. 
-
-- Design form
-	+ Add list for Subjects in Categories.
-	+ Add dropdpwn box for Categories.
-	+ Add "About" button. 
-	+ Add "Show" button.
-	+ Add display label for "Time".
-	+ Add display label for "Selected".
-	+ Add display label for "Money".
-	+ Add display label for "Category".
