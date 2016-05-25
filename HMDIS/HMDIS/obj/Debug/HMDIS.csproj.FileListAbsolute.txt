@@ -1,0 +1,11 @@
+C:\Users\Amandas\Documents\HMDIS-App\HMDIS\HMDIS\bin\Debug\HMDIS.exe.config
+C:\Users\Amandas\Documents\HMDIS-App\HMDIS\HMDIS\bin\Debug\Database.mdf
+C:\Users\Amandas\Documents\HMDIS-App\HMDIS\HMDIS\bin\Debug\Database_log.ldf
+C:\Users\Amandas\Documents\HMDIS-App\HMDIS\HMDIS\bin\Debug\HMDIS.exe
+C:\Users\Amandas\Documents\HMDIS-App\HMDIS\HMDIS\bin\Debug\HMDIS.pdb
+C:\Users\Amandas\Documents\HMDIS-App\HMDIS\HMDIS\obj\Debug\HMDIS.csprojResolveAssemblyReference.cache
+C:\Users\Amandas\Documents\HMDIS-App\HMDIS\HMDIS\obj\Debug\HMDIS.MainForm.resources
+C:\Users\Amandas\Documents\HMDIS-App\HMDIS\HMDIS\obj\Debug\HMDIS.Properties.Resources.resources
+C:\Users\Amandas\Documents\HMDIS-App\HMDIS\HMDIS\obj\Debug\HMDIS.csproj.GenerateResource.Cache
+C:\Users\Amandas\Documents\HMDIS-App\HMDIS\HMDIS\obj\Debug\HMDIS.exe
+C:\Users\Amandas\Documents\HMDIS-App\HMDIS\HMDIS\obj\Debug\HMDIS.pdb

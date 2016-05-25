@@ -30,3 +30,4 @@ Code plan:
 
 ----------------------------------------Done so far----------------------------------------
 
+Design database based on database diagram. 
