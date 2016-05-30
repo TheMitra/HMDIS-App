@@ -31,3 +31,6 @@ Code plan:
 ----------------------------------------Done so far----------------------------------------
 
 Design database based on database diagram. 
+Added some data to database.
+Added form and designed main menu.
+Connected database to main menu form making data completely visible. 
