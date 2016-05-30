@@ -10,9 +10,15 @@ namespace HMDIS.Data_Control
 {
     class DatabaseAccess
     {
-        public void VisaDatabaseKunder(ListView listViewItem)
-        {
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename='C:\Users\Amandas\Documents\HMDIS-App\HMDIS\HMDIS\Database.mdf'; Integrated Security = True";            
+
+        // Hemdatorn:
+        //private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename='C:\Users\Amandas\Documents\HMDIS-App\HMDIS\HMDIS\Database.mdf'; Integrated Security = True";
+
+        // Skola:
+        private string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename='K:\HMDIS-App\HMDIS\HMDIS\Database.mdf';Integrated Security = True";
+
+        public void VisaDatabaseSubjects(ListView listViewItem)
+        {                       
             SqlConnection sqlConnection = new SqlConnection(connectionString);
             
             sqlConnection.Open();
@@ -36,6 +42,19 @@ namespace HMDIS.Data_Control
             }
 
             sqlConnection.Close();
+        }
+        
+        public void AddSubject(TextBox textBoxSubject, TextBox textBoxCurrency, ComboBox comboBoxCategory)
+        {            
+            SqlConnection sqlConnection = new SqlConnection(connectionString);
+            
+            sqlConnection.Open();
+            string cmd = "INSERT INTO Subject(SubjectName, Hours, Minutes, MoneyAmount, MoneyCurrency, Category) VALUES ('" + textBoxSubject.Text + "', '"+ 0 + "', '" + 0 + "', '" + 0 + "', '" + textBoxCurrency.Text + "', '" + comboBoxCategory.SelectedItem.ToString() + "');";
+            SqlCommand sqlCommand = new SqlCommand(cmd, sqlConnection);
+
+            sqlCommand.ExecuteNonQuery();
+
+            sqlConnection.Close();            
         }
     }
 }

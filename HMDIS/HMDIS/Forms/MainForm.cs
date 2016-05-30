@@ -19,7 +19,19 @@ namespace HMDIS
         {
             InitializeComponent();
             databaseAccess = new DatabaseAccess();
-            databaseAccess.VisaDatabaseKunder(listViewSubjectsDataTab);
+            databaseAccess.VisaDatabaseSubjects(listViewSubjectsDataTab);
+        }
+
+        private void buttonAddSubject_Click(object sender, EventArgs e)
+        {
+            databaseAccess.AddSubject(textBoxSubject, textBoxCurrency, comboBoxCategory);
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'databaseDataSet.Subject' table. You can move, or remove it, as needed.
+            this.subjectTableAdapter.Fill(this.databaseDataSet.Subject);
+            databaseAccess.VisaDatabaseSubjects(listViewSubjectsDataTab);
         }
     }
 }
